@@ -29,8 +29,8 @@ void CSphere::Draw()
 	}
 
 	///@note Allocate memory for the geometry data.
-	fVerticesCount = fRings * fSectors * 3;
-	fIndicesCount = fRings * fSectors * 4;
+	fVerticesCount = fRings * fSectors;
+	fIndicesCount = (fRings - 1) * (fSectors - 1) * 4;
 
 	this->Allocate();
 
@@ -67,9 +67,9 @@ void CSphere::Draw()
 	///@note Add the indices.
 	TVertIndex* i = &fIndices[0];
 
-	for (Uint16 r = 0; r < fRings; ++r)
+	for (Uint16 r = 0; r < fRings - 1; ++r)
 	{
-		for(Uint16 s = 0; s < fSectors; ++s)
+		for(Uint16 s = 0; s < fSectors - 1; ++s)
 		{
 			*i++ = (r + 1) * fSectors + (s + 1);
 			*i++ = (r + 1) * fSectors + s;

@@ -245,10 +245,7 @@ void CGLRenderer::DrawShape(IShapePtr pShape)
 	}
 
 	///@note First draw the object geometry.
-	if (gMemoryCleaning)
-	{
-		pShape->Draw();
-	}
+	pShape->Draw();
 
 	///@note Get the transform matrix.
 	const Math::CMatrix m = pShape->GetMatrix();

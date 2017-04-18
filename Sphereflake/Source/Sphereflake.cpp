@@ -109,7 +109,6 @@ void CSphereflake::Draw()
 		for (auto& pSphere : level)
 		{
 			pSphere->SetColor(col);
-			pSphere->Draw();
 			scene.AddShape(pSphere);
 		}
 

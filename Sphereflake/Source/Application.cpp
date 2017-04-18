@@ -47,7 +47,7 @@ int CApplication::OnExecute()
 	///@WARNING Turning memory cleaning TRUE will make you rendering really slower.
 	/// However, you will be able to render more objects on the scene.
 	data.fMemoryCleaning		= true;
-	data.fCriticalObjectsCount	= 70000; // << memory optimization if objs count >= 70000.
+	data.fCriticalObjectsCount	= 500000; // << memory clearing if objs count >= 500000.
 	/// Command input ///
 	data.fArgc					= fArgc;
 	data.fArgv					= fArgv;
@@ -63,7 +63,6 @@ int CApplication::OnExecute()
 	
 	floor->SetMatrix(floorMat);
 	floor->SetColor(CRGBAColor(153, 153, 153));
-	floor->Draw();
 
 	///@note Draw the sphereflake.
 	CSphereflake obj(5, 6.0, 20, 20);
