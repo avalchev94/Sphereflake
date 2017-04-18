@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\Application.cpp" />
+    <ClCompile Include="Source\Math\Point3D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\MathUtils.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\StdAfx.cpp" />
+    <ClCompile Include="Source\Primitives\IShape.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Math\Matrix.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Primitives\RGBAColor.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Primitives\Cube.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene.cpp" />
+    <ClCompile Include="Source\Camera.cpp" />
+    <ClCompile Include="Source\Render\GLRender.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Primitives\Rect.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Primitives\Sphere.cpp">
+      <Filter>Primitives</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Sphereflake.cpp" />
+    <ClCompile Include="Source\Math\Point2D.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Application.h" />
+    <ClInclude Include="Source\Math\Point3D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Math\MathUtils.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Primitives\IShape.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\StdAfx.h" />
+    <ClInclude Include="Source\Math\Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Primitives\RGBAColor.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Primitives\Cube.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene.h" />
+    <ClInclude Include="Source\Camera.h" />
+    <ClInclude Include="Source\Render\GLRender.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Primitives\Rect.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Primitives\Sphere.h">
+      <Filter>Primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Sphereflake.h" />
+    <ClInclude Include="Source\Math\Point2D.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{a0b78ae1-2785-4c16-aada-75fc4a6f04f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Primitives">
+      <UniqueIdentifier>{6f7c9aa2-51c2-473b-89c6-2dd32d57bdca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{44fc5b79-e1a5-4316-88a1-8b054fd2c70f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
